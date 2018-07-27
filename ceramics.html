@@ -1,0 +1,1363 @@
+
+<!doctype html>
+
+
+
+
+
+<html lang="ru-RU">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <title>Naive</title>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="керамика ручной работы, дизайнерская керамика, магазин дизайнерской керамики, интернет магазин дизайнерской керамики, интернет магазин керамики ручной работы,  интернет магазин керамики ручной работы спб, изделия из глины, керамическая посуда купить, дизайнерская керамика спб, современная дизайнерская посуда ручной работы, дизайнерские предметы мебели,">
+    <meta name="description" content="Огромный выбор керамики ручной работы. Все сделано с любовью и душой.">
+    <link rel="shortcut icon" type="image/png" href="https://lh6.googleusercontent.com/QPLsOgnPdkQ4gBRt_jA7cC3LT-SNXinnkA--G2Qx5y2cQ2wxnHNvCcNUWTs=w2400">
+
+        <link rel="stylesheet" type="text/css" href="/static/build/all.min.css">
+
+
+        <!--[if lt IE 9]>
+            <script type="text/javascript" charset="UTF-8" src="/static/build/all.ie8.min.js"></script>
+            <style type="text/css">
+                .home-slides {
+                    display: none !important;
+                }
+                .cart-add select {
+                    display: inline-block !important;
+                }
+            </style>
+        <![endif]-->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="/static/build/all.min.js"></script>
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-58721208-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+    try {
+    w.yaCounter31781561 = new Ya.Metrika({id:31781561,
+    webvisor:true,
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true});
+    } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/31781561" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+<script>
+
+
+$(function(){
+  $('.minimized').click(function(event) {
+    var i_path = $(this).attr('src');
+    $('body').append('<div id="overlay"></div><div id="magnify"><img src="'+i_path+'"><div id="close-popup"><i></i></div></div>');
+    $('#magnify').css({
+	    left: ($(document).width() - $('#magnify').outerWidth())/2,
+	    // top: ($(document).height() - $('#magnify').outerHeight())/2 upd: 24.10.2016
+            top: ($(window).height() - $('#magnify').outerHeight())/2
+	  });
+    $('#overlay, #magnify').fadeIn('fast');
+  });
+
+  $('body').on('click', '#close-popup, #overlay', function(event) {
+    event.preventDefault();
+
+    $('#overlay, #magnify').fadeOut('fast', function() {
+      $('#close-popup, #magnify, #overlay').remove();
+    });
+  });
+});
+
+
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+<style>
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: apercu_proregular,Helvetica,Arial,Verdana,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+}
+body, html {
+    height: 100%;
+}
+.page {
+    margin: 0 auto;
+    padding: 60px;
+    padding-bottom: 78px;
+    padding-top: 160px;
+    position: relative;
+    width: 930px;
+}
+.header {
+    background: #fff;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    width: 930px;
+    z-index: 100;
+  /* box-shadow: 0em 0.4em 10px rgba(122,122,122,0.5); */
+    border-bottom: 2px solid black;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.header__menu {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+}
+.header__menu__item{
+  display: inline;
+}
+.content {
+    position: relative;
+    zoom: 1;
+}
+.content__column_1 {
+    width: 780px;
+}
+.content__column {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 780px;
+    min-height: 700px;
+}
+.content__column_2 {
+    float: right;
+    width: 780px;
+}
+div {
+    display: block;
+}
+list:before {
+    content: "";
+    display: table;
+}
+.sidebar-block {
+    margin-bottom: 40px;
+}
+.sidebar-block__title {
+    color: #000;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-family: apercu_probold,Helvetica,Arial,Verdana,sans-serif;
+    text-transform: uppercase;
+}
+.sidebar-block__content {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: .1em;
+}
+ol, ul {
+    list-style: none;
+}
+.menu-categories__item {
+    display: table;
+    margin-bottom: 15px;
+    vertical-align: middle;
+    position: relative;
+    width: 125px;
+}
+.menu-subcategories {
+    display: none;
+    margin-bottom: 15px;
+}
+
+
+.sidebar-block {
+    margin-bottom: 40px;
+}
+.sidebar-block__title {
+    color: #000;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-family: apercu_probold,Helvetica,Arial,Verdana,sans-serif;
+    text-transform: uppercase;
+}
+.sidebar-block__content {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: .1em;
+}
+.menu-brands {
+    padding-right: 20px;
+}
+
+.menu-brands__item {
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+}
+.content__column_2 {
+    float: right;
+    width: 780px;
+}
+
+.content__column {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 780px;
+    min-height: 700px;
+}
+.product-list {
+    zoom: 1;
+    margin-right: -30px;
+}
+
+ol, ul {
+    list-style: none;
+}
+.product-list__item {
+    border-bottom: 2px solid black;
+    float: left;
+    height: 228px;
+    margin-bottom: 25px;
+    margin-right: 30px;
+    position: relative;
+    width: 238px;
+   	color: grey;
+}
+	.product-list__item__price{
+		text-color:grey;
+		color: grey;
+	}
+	.product-list__item__description{
+		text-color:grey;
+		color: grey;
+	}
+.pagination {
+    font-size: 16px;
+    text-align: center;
+}
+ol, ul {
+    list-style: none;
+}
+.pagination__pages__item {
+    display: inline-block;
+    margin: 10px 2px;
+}
+.footer {
+    zoom: 1;
+    margin: 120px 0 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.first {
+ font-family:'century gothic';
+ color:#fff;
+ font-size: 50px;
+ align:center;
+ top:30%;
+ left: 15%;
+ text-shadow: 0 1px 1px #000a33;
+ position:absolute;
+ /*
+ background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает
+ background		: rgba(0, 0, 0, 0.7); */
+}
+#slider{
+overflow: hidden;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+#slider figure  {
+  width: 500%;
+  position: relative;
+  margin: 0px;
+  text-align: left;
+  left: 0px;
+  font-size: 0px;
+  animation: 20s slider infinite;
+}
+
+@@keyframes slider {
+
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+	.contacts{
+		position: absolute;
+		float: left;
+		top: 4800px;
+		width: 400px;
+		left: 200px;
+	}
+	#cont{
+
+	}
+	.mail{
+		margin-left: 300px;
+	}
+	.mailform ul li {
+		display: inline;
+	}
+	.mailforms {
+		display: inline;
+	}
+	.window{
+		top:0px;
+		margin-top: inherit;
+		position: absolute;
+	}
+	.end{
+		width: 930px;
+		height: 150px;
+		background-color: white;
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+		top:5050px;
+		border-top: 2px solid black;
+	}
+
+  /* картинка на странице */
+.minimized {
+  width: 236px;
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+
+.minimized:hover {
+  border: 1px solid grey;
+}
+
+/* увеличенная картинка */
+#magnify {
+  display: none;
+
+  /* position: absolute; upd: 24.10.2016 */
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+
+#magnify img {
+  width: 100%;
+}
+
+/* затемняющий фон */
+#overlay {
+  display: none;
+
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+.cssSlider {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.cssSlider .slides {
+	overflow: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 70vmin;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cssSlider .slides > li {
+	width: 100%;
+	height: 70vmin;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.cssSlider .slides > li > img {
+	width: 100%;
+	height: auto;
+}
+/*
+.cssSlider .slides > li:first-child:not(:target) {
+	z-index: 1;
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+*/
+.cssSlider .thumbnails {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.cssSlider .thumbnails > li {
+	float: left;
+	width: 20%;
+}
+.cssSlider .thumbnails > li > a {
+	display: block;
+}
+.cssSlider .thumbnails > li > a > img {
+	width: 100%;
+	height: auto;
+}
+
+.cssSlider .slides li:target {
+	z-index: 3;
+	-webkit-animation: slide 1s 1;
+}
+.cssSlider .slides li:not(:target) {
+	-webkit-animation: hidden 1s 1;
+}
+@-webkit-keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@-webkit-keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+@keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+
+
+#tabs{
+  border:1px;
+  background-color:#white;
+}
+
+ul.tabs {
+  margin: 0; /* Обнуляем значение отступов */
+  padding: 4px; /* Значение полей */
+ }
+  ul.tabs li {
+  display: inline; /* Отображать как строчный элемент */
+  margin-right: 5px; /* Отступ слева */
+  border: 0px solid #000; /* Рамка вокруг текста */
+  padding: 3px; /* Поля вокруг текста */
+bg-color:#FFF;
+ }
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+    <div class="page" id="tabs">
+
+
+
+<header class="header">
+    <h1 class="header__logo">
+		<img src="https://lh6.googleusercontent.com/QPLsOgnPdkQ4gBRt_jA7cC3LT-SNXinnkA--G2Qx5y2cQ2wxnHNvCcNUWTs=w2400" style="float:left;width:40px;height:40px; margin-top:0px;">
+    <br>
+        <a href="index.html" title="Вернуться на главную"><br>ceramics</a>
+    </h1>
+
+    <nav class="header__menu">
+      <ul>
+          <li class="header__menu__item"><a href="ceramics.html">Керамика\</a></li>
+          <li class="header__menu__item"><a href="index.html">О нас\</a></li>
+          <!--<li class="header__menu__item"><a href="/catalog/sale/">Sale</a></li>-->
+          <li class="header__menu__item"><a href="contacts.html">контакты\</a></li>
+          <li class="header__menu__item"><a href="http://instagram.com/">instagram Блог</a></li>
+      </ul>
+    </nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+<div id="tabs-2">
+
+  <div class="content">
+
+<div class="content__column content__column_1">
+    <div class="content__column content__column_2" id="colomn">
+
+    <ul class="product-list" data-block="Paginated">
+
+            <li class="product-list__item">
+            <!--     <script>function miniatuyra3(cual,url) {var imagen1 = "https://lh6.googleusercontent.com/bLfYBEADsuWNhgHRsiaaspVsNxdxCC6Do5Knyo-2VxscmPuoHuaALtEz2jw=w2400";var imagen2 = "https://lh5.googleusercontent.com/4i18BsfnT8U1a5IS5zpCoazJ10Oc0lnCr2a1K3lHWqq0uLK1BSFI87cr1zo=w600";var imagenactual = cual.src;if(imagenactual==imagen1) {cual. src = imagen2;} else  {cual. src = imagen1;}}</script>
+               <a href=""> -->
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" style="position:absolute;"  onclick="miniatuyra3(this);" src="https://lh5.googleusercontent.com/4i18BsfnT8U1a5IS5zpCoazJ10Oc0lnCr2a1K3lHWqq0uLK1BSFI87cr1zo=w2400" alt="тарелка из белой глины">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">100</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        тарелка из белой глины
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+              <!--  </a> -->
+
+            </li>
+
+            <li class="product-list__item">
+              <!--  <a href="">-->
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh3.googleusercontent.com/KsrwmTyPgBQQeztE_FfT_N7YmabtjciObJI1pBhfdE97_uVJRT56uB21X9I=w2400" alt="тарелка из белой глины с отпечатком">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">113</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        тарелка из белой глины с отпечатком
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+              <!--  </a> -->
+
+                    <a href="" class="product-list__item__instock">В наличии</a>
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh3.googleusercontent.com/oM0vI_u2jetB4j8zrvLqbh_IDR8QirVWO0sJsjc_x4AjIY7ioBNSOERDEnk=w2400" alt="круглая тарелка из белой глины">
+</div>
+<!--/-/stretch/off/-/resize/238x/-/resize/x191/-/crop/238x191/center/--->
+
+                    <span class="product-list__item__price">
+                        от
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">218</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                         тарелка из красной глины
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh6.googleusercontent.com/Zaf2Hsqr4oVpejNzYZqb-P10WcMHYW__nk9t6OhFzBwiRc2r3IvxXqLG1j0=w2400" alt="чашка из белой глины">
+</div>
+
+                    <span class="product-list__item__price">
+                      чашка из белой глины
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">2809</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                      чашка из белой глины
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh5.googleusercontent.com/WBOpZfFcGMdOjfOQvFep9NHGK32elZY-yc5nytkWip3Iob6JgjBYsRnhed8=w2400" alt="кружка из белой глины">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">35</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        кружка из белой глины
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+                    <a href="" class="product-list__item__instock">В наличии</a>
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh4.googleusercontent.com/RqdoWtRA-MPNEnSw2nd36dvw5rJJ2edf7tFgMHvBrHG9K808yxh7EcU-KZU=w2400" alt="стакан">
+</div>
+
+                    <span class="product-list__item__price">
+                        от
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">243</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        стакан покрытый эффектарной глазурью
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+<a href="" class="product-list__item__instock">На заказ</a>
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh6.googleusercontent.com/2mClR1cMLgKKweh-N3yxFvkccJHh1xGyPE6LgP8tZClzjKcDlsnJ4s2RoiU=w2400" alt="кувшин">
+</div>
+
+                    <span class="product-list__item__price">
+
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">2090</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        кувшин из черной глины
+                    </strong>
+                    <em class="product-list__item__description">
+наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh3.googleusercontent.com/GXka2L3k_T1SGZqXKt9h9aLcSfuUH4wANA8o5VHhWgWFbT0i_TA1vYnJ1zs=w2400" alt="Декоративная ваза">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">80</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        Декоративная ваза из голубой глины
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+                    <a href="" class="product-list__item__instock">в наличии</a>
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh3.googleusercontent.com/3iIQxfO763VciM7gNqLk7kLBVuYEBSb7RXW9NxtpHNo7zjw7K238cXLGkTE=w2400" alt="чашка">
+</div>
+
+                    <span class="product-list__item__price">
+                        от
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">275</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        чашка из глины с шамотом
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh6.googleusercontent.com/FSDXCItPyYATj2nlaK4BblEk_ZOIjrMsrvU5agZ_ArFF9xY_z4hKGLq0EKw=w2400" alt="миниатюрная ваза">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">130</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                      миниатюрная ваза
+                    </strong>
+                    <em class="product-list__item__description">
+                      наличие:
+                    </em>
+
+
+                    <a href="" class="product-list__item__instock">на заказ</a>
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh3.googleusercontent.com/jw-cCvXISwvgzNVyNAjphkhPKtoKu49c1AQDLz5Q38DNZAuT8Zyky-2dyF0=w2400" alt="турка для индукционной плиты">
+</div>
+
+                    <span class="product-list__item__price">
+
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        турка для индукционной плиты
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh3.googleusercontent.com/ydOJ9PWNRMWkKvaK1KgpKlj9qrKNR-FZFFfmU2rNx4Xptxm5-S_uDQWspJc=w2400" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh4.googleusercontent.com/NBWtqtqfGKejGr_ngGFHGvfBJVAd8K2xow6OXIWh1ZoQ5dhJuqf9IcpL4WY=w2400" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                      описание
+                    </strong>
+                    <em class="product-list__item__description">
+                      наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh3.googleusercontent.com/uQJBqWJfXPnWh_R7Ja3o2r-nqmd_2kwewP807HffYyQJeIm_By53LhfPnkc=w2400" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+                   <a href="" class="product-list__item__instock">на заказ</a>
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img class="minimized" src="https://lh5.googleusercontent.com/XWFNACNOa1bzWjUUd99__x2Sh7dphMbe-i5R4v60itlo2j-VYCabQfRq1CM=w2400" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/1/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/yomkosti-dlya-hraneniya-tuesa/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        от
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/emkost-dlya-pechenya-muuto-bulky/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                      наличие:
+                    </em>
+                </a>
+
+                    <a href="/catalog/stock/" class="product-list__item__instock"></a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/64-high-stool/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/about-a-chair-aac18/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                      размер
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/copenhague-round-table-cph20/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                      наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/lobby-chair-ES-108/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                      наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/podsvechnik-vaza-octagono/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/hideaway-backet/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+                </a>
+
+                    <a href="/catalog/stock/" class="product-list__item__instock"> </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/about-a-chair-aac19/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+
+
+
+<span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                         описание
+                    </strong>
+                    <em class="product-list__item__description">
+                      наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/fauteuil-direction/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                      наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/corky-carafe-glasses/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="plane111.jpg" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цнна</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+                </a>
+
+                    <a href="/catalog/stock/" class="product-list__item__instock"></a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/lukki-stool/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                      наличие:
+                    </em>
+                </a>
+
+            </li>
+
+            <li class="product-list__item">
+                <a href="/catalog/ea001-stool-rocket/">
+                    <div class="product-image" data-role="productImage" style="width: 238px; height: 191px;">
+    <img src="pic" alt="описание">
+</div>
+
+                    <span class="product-list__item__price">
+                        <span data-block="Price"
+      class="price  "><b data-role="value">цена</b><i>&nbsp;&euro;</i></span>
+
+                    </span>
+                    <strong class="product-list__item__description">
+                        описание
+                    </strong>
+                    <em class="product-list__item__description">
+                        наличие:
+                    </em>
+                </a>
+
+            </li>
+
+    </ul>
+
+</div>
+</div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+        <div style="display: none">
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter39742865 = new Ya.Metrika({ id:39742865, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ecommerce:"dataLayer" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/39742865" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+</div>
+
+            <script type="text/javascript">
+                dob_settings = {
+                    browsers: { ie: 9 },
+                    language: 'ru'
+                };
+            </script>
+            <script type="text/javascript" charset="UTF-8" src="/static/build/dob.min.js"></script>
+
+
+
+</body>
+
+</html>
